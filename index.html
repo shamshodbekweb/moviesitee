@@ -14,7 +14,7 @@
                   <button class="bg-transparent text-light border-0 fs-3 me-3 ">
                       <i class="bi bi-list"></i>
                   </button>
-                <a class="navbar-brand text-light" href="#">
+                <a class="navbar-brand text-light" href="./index.html">
                   <img src="./img/загрузка.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,29 +23,20 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <select class="form-select" aria-label="Default select example">
-                          <option selected>Year</option>
-                          <option value="1">2021</option>
-                          <option value="2">2022</option>
-                          <option value="3">2023</option>
-                          <option value="4">2024</option>
+                      <select onchange="fnTime(value)" class="form-select" aria-label="Default select example">
+                            <option selected>Year</option>
+                          <option value="new">new</option>
+                          <option value="old">old</option>
                         </select>
                         <li class="nav-item">
-                          <select class="form-select" aria-label="Default select example">
+                          <select onchange="fnRating(value)" class="form-select" aria-label="Default select example">
                               <option selected>Rating</option>
-                              <option value="1">5*</option>
-                              <option value="2">4*</option>
-                              <option value="3">3*</option>
-                              <option value="4">2*</option>
-                              <option value="5">1*</option>
+                              <option value="max">max</option>
+                              <option value="min">min</option>
                             </select>
                             <li class="nav-item">
-                              <select class="form-select" aria-label="Default select example">
-                                  <option selected>Genre</option>
-                                  <option value="1">horror</option>
-                                  <option value="2">action</option>
-                                  <option value="3">racing</option>
-                                  <option value="4">comedy</option>
+                              <select onchange="fnCategory(value)" class="form-select sel__category" aria-label="Default select example">
+                                  <option >  Category</option> 
                                 </select>
                   </ul>
                   <form class="d-flex" role="search">
@@ -59,10 +50,10 @@
               <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1411566616380-5MSY1SMPDNDZPQG2K03M/interstellar-6-new-photos-and-banner" class="d-block w-100" alt="...">
+                      <img src="https://wallpapers.com/images/featured/interstellar-d5hpgadclxszmpeh.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="https://bunker158.com/wp-content/uploads/2019/06/The-Nun-Valak-Prime1-Conjuring-bunker158-annabelle-10.jpg" class="d-block w-100" alt="...">
+                      <img src="https://c4.wallpaperflare.com/wallpaper/633/559/760/the-maze-runner-wallpaper-preview.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
                       <img src="https://a.d-cd.net/CoQ5f9UN-h85zDLW5N350uUvVSE-1920.jpg" class="d-block w-100" alt="...">
